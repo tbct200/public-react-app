@@ -1,0 +1,16 @@
+{
+    "FAKE_KEY": "NOTE: This file is for local development ONLY!!!! It is OVERWRITTEN by the deploy_react_app ECS task based on the env_selector",
+    "environment_name":"Alpha",
+    "aws_account_id":"457642825981",
+    "flask_domain_prefix":"server",
+    "api_domain_prefix":"api",
+    "base_domain":"alpha.sunfoxsolar.net",
+    "us_east_2_certificate_arn": "arn:aws:acm:us-east-2:457642825981:certificate/830c2a65-93c5-40b2-8906-c9feec0b28e8",
+    "us_east_2_certificate_id":"830c2a65-93c5-40b2-8906-c9feec0b28e8",
+    "us_east_1_certificate_arn": "arn:aws:acm:us-east-1:457642825981:certificate/77b130d6-6ab2-49f9-a744-2f5a53def14d",
+    "us_east_1_certificate_id":"77b130d6-6ab2-49f9-a744-2f5a53def14d",
+    "hosted_zone_id": "Z0383903IBOPQNGGT1V4",
+    "hosted_zone_name": "alpha.sunfoxsolar.net",  
+    "bubble_environment_path": "/version-alpha",
+    "google_analytics_id": "G-JHHFWSRV1F"
+}
