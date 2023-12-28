@@ -17,10 +17,10 @@ export const NetworkFragment = ({stringsObj}) => {
 				<FragmentContentWrapper>
 					<LeftContainer>
 						<FragmentTitle>
-							{stringsObj.association_block_heading}
+							{stringsObj?.association_block_heading}
 						</FragmentTitle>
 						<label>
-							{stringsObj.association_block_body}
+							{stringsObj?.association_block_body}
 						</label>
 						<div>
 							<Button

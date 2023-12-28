@@ -117,12 +117,12 @@ const Setup2 = ({stringsObj}) => {
 			<ContentContainer style={{ background: "transparent" }}>
 				<Side>
 					<LeftSide>
-						<Title caption={stringsObj.install_size_hero_text} />
+						<Title caption={stringsObj?.install_size_hero_text} />
 						<Text
-							caption={stringsObj.install_size_hero_subheading_1}
+							caption={stringsObj?.install_size_hero_subheading_1}
 						/>
 						<InfoContainer>
-							<Description caption={stringsObj.install_size_address} />
+							<Description caption={stringsObj?.install_size_address} />
 							<Text caption={address} />
 							<Description
 								caption={"Your Email"}
@@ -149,7 +149,7 @@ const Setup2 = ({stringsObj}) => {
 								<label>{recommendSize} kW</label>.
 							</p>
 							<p>
-								{stringsObj.install_size_estimate_disclaimer}
+								{stringsObj?.install_size_estimate_disclaimer}
 							</p>
 							<InputSuffix
 								placeholder={

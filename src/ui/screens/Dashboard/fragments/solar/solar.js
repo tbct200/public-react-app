@@ -33,8 +33,8 @@ export const SolarFragment = () => {
 			<FragmentWrapper>
 				<FragmentContentWrapper>
 					<LeftContainer>
-						<FragmentTitle>{stringsObj.second_block_heading_1}</FragmentTitle>
-						<label>{stringsObj.second_block_heading_2}</label>
+						<FragmentTitle>{stringsObj?.second_block_heading_1}</FragmentTitle>
+						<label>{stringsObj?.second_block_heading_2}</label>
 						<img src={WorkerImg} alt="worker" />
 					</LeftContainer>
 					<RightContainer>
@@ -56,7 +56,7 @@ export const SolarFragment = () => {
 												alt="Plan"
 											/>
 										</ImgContainer>
-										<label>{stringsObj.second_block_page_icon_title}</label>
+										<label>{stringsObj?.second_block_page_icon_title}</label>
 									</div>
 									<div>
 										<img
@@ -74,7 +74,7 @@ export const SolarFragment = () => {
 										display:
 											activeIndex === 1 ? "flex" : "none",
 									}}
-								>{stringsObj.second_block_page_icon_body}</ListLabel>
+								>{stringsObj?.second_block_page_icon_body}</ListLabel>
 							</ListItem>
 							<ListItem>
 								<ListTitle
@@ -90,7 +90,7 @@ export const SolarFragment = () => {
 										<ImgContainer>
 											<img src={InfoImg} alt="Plan" />
 										</ImgContainer>
-										<label>{stringsObj.second_block_info_icon_title}</label>
+										<label>{stringsObj?.second_block_info_icon_title}</label>
 									</div>
 									<div>
 										<img
@@ -108,7 +108,7 @@ export const SolarFragment = () => {
 										display:
 											activeIndex === 2 ? "flex" : "none",
 									}}
-								>{stringsObj.second_block_info_icon_body}</ListLabel>
+								>{stringsObj?.second_block_info_icon_body}</ListLabel>
 							</ListItem>
 							<ListItem>
 								<ListTitle
@@ -124,7 +124,7 @@ export const SolarFragment = () => {
 										<ImgContainer>
 											<img src={CompareImg} alt="Plan" />
 										</ImgContainer>
-										<label>{stringsObj.second_block_scales_icon_title}</label>
+										<label>{stringsObj?.second_block_scales_icon_title}</label>
 									</div>
 									<div>
 										<img
@@ -142,7 +142,7 @@ export const SolarFragment = () => {
 										display:
 											activeIndex === 3 ? "flex" : "none",
 									}}
-								>{stringsObj.second_block_scales_icon_body}</ListLabel>
+								>{stringsObj?.second_block_scales_icon_body}</ListLabel>
 							</ListItem>
 							<ListItem>
 								<ListTitle
@@ -158,7 +158,7 @@ export const SolarFragment = () => {
 										<ImgContainer>
 											<img src={DollarImg} alt="Plan" />
 										</ImgContainer>
-										<label>{stringsObj.second_block_money_icon_title}</label>
+										<label>{stringsObj?.second_block_money_icon_title}</label>
 									</div>
 									<div>
 										<img
@@ -176,7 +176,7 @@ export const SolarFragment = () => {
 										display:
 											activeIndex === 4 ? "flex" : "none",
 									}}
-								>{stringsObj.second_block_money_icon_body}</ListLabel>
+								>{stringsObj?.second_block_money_icon_body}</ListLabel>
 							</ListItem>
 						</List>
 					</RightContainer>

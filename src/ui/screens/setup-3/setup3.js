@@ -168,7 +168,7 @@ const Setup3 = ({stringsObj}) => {
 				<Side>
 					<LeftSide>
 						<Title
-							caption={stringsObj.install_cost_hero_text}
+							caption={stringsObj?.install_cost_hero_text}
 						/>
 						<InfoContainer>
 							<Description caption={"Your Address"} />
@@ -192,12 +192,12 @@ const Setup3 = ({stringsObj}) => {
 						<StepContent>
 							<p>
 								In
-								<label> {addr.state} </label> {stringsObj.install_size_estimate_heading_pt_1}{" "}
+								<label> {addr.state} </label> {stringsObj?.install_size_estimate_heading_pt_1}{" "}
 								<label>
 									${installCost.install_cost_per_kw} per kW.{" "}
 								</label>{" "}
-								{stringsObj.install_size_estimate_heading_pt_2}{" "}<label>{size} kW </label>{" "}
-								{stringsObj.install_size_estimate_heading_pt_3}{" "}
+								{stringsObj?.install_size_estimate_heading_pt_2}{" "}<label>{size} kW </label>{" "}
+								{stringsObj?.install_size_estimate_heading_pt_3}{" "}
 								<label>
 									{UsdFormatter.format(
 										parseFloat(
@@ -223,7 +223,7 @@ const Setup3 = ({stringsObj}) => {
 						</StepContent>
 						<ButtonContainer>
 							<Button
-								caption={stringsObj.install_cost_continue}
+								caption={stringsObj?.install_cost_continue}
 								height={60}
 								width={"100%"}
 								loading={loading}

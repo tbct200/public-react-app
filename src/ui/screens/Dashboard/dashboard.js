@@ -120,15 +120,15 @@ export const Dashboard = ({stringsObj}) => {
 					<Header />
 					<ContentWrapper id="main-page">
 						<Content>
-							<Title caption={stringsObj.hero_heading_1} />
+							<Title caption={stringsObj?.hero_heading_1} />
 							<Text
-								caption={stringsObj.hero_heading_2}
+								caption={stringsObj?.hero_heading_2}
 							/>
 							<MobileImageContainer>
 								<img src={SolarPanelImg} alt="solar-panel" />
 							</MobileImageContainer>
 							<Description
-								caption={stringsObj.hero_body}
+								caption={stringsObj?.hero_body}
 								style={{ marginTop: 30, marginBottom: 10 }}
 							/>
 							<InputContainer>
@@ -136,7 +136,7 @@ export const Dashboard = ({stringsObj}) => {
 									apiKey={
 										"AIzaSyDLs8yb_ANP72I7nKNkiYd51P6zh_R5_4Q"
 									}
-									placeholder={stringsObj.hero_enter_address}
+									placeholder={stringsObj?.hero_enter_address}
 									iserror={errAddress ? 1 : 0}
 									options={options}
 									onPlaceSelected={(place) => {
@@ -204,7 +204,7 @@ export const Dashboard = ({stringsObj}) => {
 								/>
 								<Input
 									iserror={errMail ? 1 : 0}
-									placeholder={stringsObj.hero_enter_email}
+									placeholder={stringsObj?.hero_enter_email}
 									onChange={(e) => {
 										setEmail(e.target.value);
 										setErrMail(false);
@@ -212,7 +212,7 @@ export const Dashboard = ({stringsObj}) => {
 								/>
 							</InputContainer>
 							<Button
-								caption={stringsObj.cta_text}
+								caption={stringsObj?.cta_text}
 								height={56}
 								width={"calc(100% - 80px)"}
 								onClick={goModel}

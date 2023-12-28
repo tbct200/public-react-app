@@ -48,11 +48,11 @@ export const ControlFragment = ({stringsObj}) => {
 			<FragmentContentWrapper>
 				<LeftContainer>
 					<FragmentTitle>
-						{stringsObj.cta_block_2_left_heading}
+						{stringsObj?.cta_block_2_left_heading}
 					</FragmentTitle>
-					<label>{stringsObj.cta_block_2_left_body}</label>
+					<label>{stringsObj?.cta_block_2_left_body}</label>
 					<Button
-						caption={stringsObj.cta_block_2_button_text}
+						caption={stringsObj?.cta_block_2_button_text}
 						height={56}
 						width={"calc(100% - 80px)"}
 						onClick={() => {
@@ -73,9 +73,9 @@ export const ControlFragment = ({stringsObj}) => {
 				</LeftContainer>
 				<RightContainer>
 					<FragmentTitle>
-						{stringsObj.cta_block_2_right_heading}
+						{stringsObj?.cta_block_2_right_heading}
 					</FragmentTitle>
-					<label>{stringsObj.cta_block_2_right_body}</label>
+					<label>{stringsObj?.cta_block_2_right_body}</label>
 					<SubmitContainer>
 						<Input
 							iserror={errMail ? 1 : 0}
@@ -87,7 +87,7 @@ export const ControlFragment = ({stringsObj}) => {
 							}}
 						/>
 						<Button
-							caption={stringsObj.cta_block_2_right_text}
+							caption={stringsObj?.cta_block_2_right_text}
 							height={56}
 							width={"calc(100% - 80px)"}
 							onClick={goMailing}

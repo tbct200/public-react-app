@@ -369,22 +369,22 @@ const Setup1 = ({stringsObj}) => {
 			<Container style={{ background: "transparent" }}>
 				<Side>
 					<LeftSide>
-						<Title caption={stringsObj.power_bill_hero_text} />
+						<Title caption={stringsObj?.power_bill_hero_text} />
 						<div>
 							<Text
-								caption={stringsObj.power_bill_hero_subheading_1_pt1}
+								caption={stringsObj?.power_bill_hero_subheading_1_pt1}
 							/>
 							<Text
-								caption={stringsObj.power_bill_hero_subheading_1_pt2_underline}
+								caption={stringsObj?.power_bill_hero_subheading_1_pt2_underline}
 								style={{ textDecoration: "underline" }}
 							/>
 							<Text
-								caption={stringsObj.power_bill_hero_subheading_1_pt3}
+								caption={stringsObj?.power_bill_hero_subheading_1_pt3}
 							/>
 						</div>
 						<Description
 							caption=
-								{stringsObj.power_bill_hero_subheading_2}
+								{stringsObj?.power_bill_hero_subheading_2}
 
 						/>
 						<InfoContainer>
@@ -426,7 +426,7 @@ const Setup1 = ({stringsObj}) => {
 									/>
 								</StepRadio>
 								<StepLabel>
-									{stringsObj.power_bill_monthly}
+									{stringsObj?.power_bill_monthly}
 								</StepLabel>
 							</Stepper>
 							<Stepper
@@ -448,7 +448,7 @@ const Setup1 = ({stringsObj}) => {
 									/>
 								</StepRadio>
 								<StepLabel>
-									{stringsObj.power_bill_seasonal}
+									{stringsObj?.power_bill_seasonal}
 								</StepLabel>
 							</Stepper>
 							<Stepper
@@ -470,7 +470,7 @@ const Setup1 = ({stringsObj}) => {
 									/>
 								</StepRadio>
 								<StepLabel>
-									{stringsObj.power_bill_single}
+									{stringsObj?.power_bill_single}
 								</StepLabel>
 							</Stepper>
 						</StepContainer>
@@ -563,7 +563,7 @@ const Setup1 = ({stringsObj}) => {
 						</StepContent>
 						<ButtonContainer>
 							<Button
-								caption={stringsObj.power_bill_continue}
+								caption={stringsObj?.power_bill_continue}
 								loading={loading}
 								height={56}
 								width={"100%"}

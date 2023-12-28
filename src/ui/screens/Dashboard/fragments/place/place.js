@@ -18,8 +18,8 @@ export const PlaceFragment = ({stringsObj}) => {
 			<FragmentWrapper>
 				<FragmentContentWrapper>
 					<FragmentTitle>
-						{stringsObj.first_block_heading_1_black} 
-						<label> {stringsObj.first_block_heading_1_orange}</label>.
+						{stringsObj?.first_block_heading_1_black} 
+						<label> {stringsObj?.first_block_heading_1_orange}</label>.
 					</FragmentTitle>
 				</FragmentContentWrapper>
 				<List>
@@ -30,27 +30,27 @@ export const PlaceFragment = ({stringsObj}) => {
 							>
 								<img src={PlanImg} alt="plan" />
 							</ImgContainer>
-							<label>{stringsObj.first_block_wrench_title}</label>
+							<label>{stringsObj?.first_block_wrench_title}</label>
 						</div>
-						<label>{stringsObj.first_block_wrench_body}</label>
+						<label>{stringsObj?.first_block_wrench_body}</label>
 					</ListItem>
 					<ListItem>
 						<div>
 							<ImgContainer>
 								<img src={ChartImg} alt="plan" />
 							</ImgContainer>
-							<label>{stringsObj.first_block_chart_title}</label>
+							<label>{stringsObj?.first_block_chart_title}</label>
 						</div>
-						<label>{stringsObj.first_block_chart_body}</label>
+						<label>{stringsObj?.first_block_chart_body}</label>
 					</ListItem>
 					<ListItem>
 						<div>
 							<ImgContainer>
 								<img src={LocationImg} alt="plan" />
 							</ImgContainer>
-							<label>{stringsObj.first_block_geo_title}</label>
+							<label>{stringsObj?.first_block_geo_title}</label>
 						</div>
-						<label>{stringsObj.first_block_geo_body}</label>
+						<label>{stringsObj?.first_block_geo_body}</label>
 					</ListItem>
 				</List>
 			</FragmentWrapper>
