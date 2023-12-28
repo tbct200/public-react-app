@@ -27,7 +27,6 @@ export const SolarFragment = () => {
 	const [activeIndex, setActiveIndex] = useState(null);
 	const stringsObj = useSelector((state) => state.stringsObj);
 	console.log(stringsObj);
-	console.log(stringsObj.more_details_header_title);
 	
 	return (
 		<Container>
